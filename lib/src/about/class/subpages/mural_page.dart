@@ -1,6 +1,5 @@
 import 'dart:math';
 import 'package:calc_if/constants/class.dart';
-import 'package:calc_if/constants/hero_tags.dart';
 import 'package:calc_if/src/app/settings_app.dart';
 import 'package:calc_if/src/widgets/background_widget.dart';
 import 'package:calc_if/storage/storage.dart';
@@ -116,15 +115,9 @@ class _MuralPageState extends State<MuralPage> with TickerProviderStateMixin {
                 3, 
                 (index) => Flexible(
                   flex: 1,
-                  child: index != 1 ? FadeTransition(
+                  child: FadeTransition(
                     opacity: _animations[index],
                     child: Class.listImagesMural[images[index]],
-                   ) : FadeTransition(
-                    opacity: _animations[index],
-                     child: Hero(
-                      tag: HeroTags.imageClass,
-                      child: Class.listImagesMural[images[index]],
-                      ),
                    )
                 ),
               ), 

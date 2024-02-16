@@ -11,7 +11,7 @@ class ProjetoInPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {
-      print(constraints.maxHeight);
+      
       return Background.withBorder(
         index: SettingsApp.temaAtual,
         borderRadius: 20.0,
