@@ -61,7 +61,7 @@ class _BoxMediaComPesosState extends State<BoxMediaComPesos> {
           _homeController.makeRecord(
             titleBox: 'Média com pesos', 
             note: nota.calcularMediaComPesos(),
-            methodCalc: '((nota1 * peso1) + (nota2 * peso2)) / (peso1 + peso2)',
+            methodCalc: '((Nota1 * Peso1) + (Nota2 * Peso2)) / (Peso1 + Peso2)',
             calc: '((${nota.nota1} * ${nota.peso1}) + (${nota.nota2} * ${nota.peso2})) / (${nota.peso1} + ${nota.peso2})'
           );
           setState(() {});

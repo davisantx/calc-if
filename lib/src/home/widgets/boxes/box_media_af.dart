@@ -45,7 +45,7 @@ class _BoxMediaAfState extends State<BoxMediaAf> {
           _homeController.makeRecord(
             titleBox: 'Média da AF', 
             note: nota.calcularMediaAF(),
-            methodCalc: "(Média final + nota da AF) / 2",
+            methodCalc: "(Média final + Nota da AF) / 2",
             calc: "(${nota.mediaFinal} + ${nota.notaAF}) / 2"
           );
           setState(() {});

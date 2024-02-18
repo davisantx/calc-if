@@ -35,7 +35,7 @@ class _RecordsPageState extends State<RecordsPage> {
                         title: const Text(
                           'Deseja excluir todos os registros?'
                         ),
-                        content: Text('Essa ação não poderá ser desfeita'),
+                        content: Text('Essa ação não poderá ser desfeita.'),
                         actions: [
                           TextButton(
                             onPressed: () {
