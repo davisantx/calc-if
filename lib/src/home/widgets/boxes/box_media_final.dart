@@ -47,7 +47,7 @@ class _BoxMediaFinalState extends State<BoxMediaFinal> {
             titleBox: 'Média final', 
             note :nota.calcularMediaFinal(),
             methodCalc: "((Média da N1 * 2)  + (Média da N2 * 3)) / 5", 
-            calc: "((${nota.notaN11} * 2)  + (${nota.notaN12} * 3)) / 5"
+            calc: "((${nota.nota1MF} * 2)  + (${nota.nota2MF} * 3)) / 5"
           );
           setState(() {});
         }
