@@ -55,3 +55,9 @@ Segue abaixo o que o app é capaz de fazer nesta versão:
 ### Correções
 
 - Correções no conteúdo de algumas strings;
+
+## Versão 1.0.2
+
+### Correção de bug
+
+- Correção da média final inconsistente;
