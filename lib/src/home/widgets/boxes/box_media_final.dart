@@ -28,18 +28,16 @@ class _BoxMediaFinalState extends State<BoxMediaFinal> {
       title: 'Calcule a média final',
       nameField1: 'Média da N1',
       nameField2: 'Média da N2',
-      nota1: nota.notaN11,
-      nota2: nota.notaN12,
+      nota1: nota.nota1MF,
+      nota2: nota.nota2MF,
       controllerField1: mediaN1Controller,
       controllerField2: mediaN2Controller,
       action: nota.calcularMediaFinal,
       onSavedField1: (value) {
-        nota.notaN11 = double.parse(value!);
-        nota.notaN12 = double.parse(value);
+        nota.nota1MF = double.parse(value!);
       },
       onSavedField2: (value) {
-        nota.notaN21 = double.parse(value!);
-        nota.notaN22 = double.parse(value);
+        nota.nota2MF = double.parse(value!);
       },
       onPressed: () {
         final isValid = formKey.currentState!.validate();

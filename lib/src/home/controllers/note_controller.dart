@@ -3,6 +3,8 @@ class NoteController {
   double notaN12 = 0;
   double notaN21 = 0;
   double notaN22 = 0;
+  double nota1MF = 0;
+  double nota2MF = 0;
   double mediaFinal = 0;
   double notaAF = 0;
   double nota1 = 0;
@@ -18,7 +20,7 @@ class NoteController {
   }
   
   double calcularMediaFinal() {
-    return ((notaN11 * 2)  + (notaN12 * 3)) / 5;
+    return ((nota1MF * 2)  + (nota2MF * 3)) / 5;
   }
   
   double calcularMediaAF() {
