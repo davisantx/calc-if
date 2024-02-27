@@ -1,9 +1,10 @@
 # CalcIF
 
-Um app que visa otimizar o processo de calculo de notas;
+É um aplicativo que visa otimizar o processo de calcular notas!
 
-Segue abaixo o que o app é capaz de fazer em usa última versão:
 &nbsp;
+## Sobre o app
+
 ### Cálculos
 
 #### Você poderá calcular os seguintes tipos de notas:
@@ -14,7 +15,7 @@ Segue abaixo o que o app é capaz de fazer em usa última versão:
 - Média da AF;
 - Média com pesos personalizados;
 
-#### Além disso, você poderá fixar um do métodos de cálculo em sua tela inicial.
+#### Além disso, você poderá fixar um dos métodos de cálculo em sua tela inicial.
 
 ### Registros
 
@@ -36,6 +37,7 @@ Segue abaixo o que o app é capaz de fazer em usa última versão:
 - Trocar o tema do aplicativo;
 - Habilitar ou desabilitar o limite de quantidade de casas decimais obtidos nos cálculos;
 - Habilitar ou desabilitar o registro das informações dos cálculos feitos;
+- Habilitar ou desabilitar a fixação automática do último card acessado;
 - Acessar informações do desenvolvedor, bem como informações acerca da turma em que o mesmo fez parte no curso integrado de informática do IFCE Campus Itapipoca;
 
 ### Segurança
@@ -48,4 +50,4 @@ Segue abaixo o que o app é capaz de fazer em usa última versão:
 
 ### Sobre
 
-- Em caso de demais dúvidas, entre em contato com o desenvolvedor.
+- Em caso de demais dúvidas, entre em contato com o desenvolvedor: **@davisantx**.
