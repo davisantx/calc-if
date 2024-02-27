@@ -1,10 +1,8 @@
 # CalcIF
 
-## Versão 1.0.0
+Um app que visa otimizar o processo de calculo de notas;
 
-Esta é a primeira versão pública do app.
-
-Segue abaixo o que o app é capaz de fazer nesta versão:
+Segue abaixo o que o app é capaz de fazer em usa última versão:
 &nbsp;
 ### Cálculos
 
@@ -15,6 +13,8 @@ Segue abaixo o que o app é capaz de fazer nesta versão:
 - Média final;
 - Média da AF;
 - Média com pesos personalizados;
+
+#### Além disso, você poderá fixar um do métodos de cálculo em sua tela inicial.
 
 ### Registros
 
@@ -49,15 +49,3 @@ Segue abaixo o que o app é capaz de fazer nesta versão:
 ### Sobre
 
 - Em caso de demais dúvidas, entre em contato com o desenvolvedor.
-
-## Versão 1.0.1
-
-### Correções
-
-- Correções no conteúdo de algumas strings;
-
-## Versão 1.0.2
-
-### Correção de bug
-
-- Correção da média final inconsistente;

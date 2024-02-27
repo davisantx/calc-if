@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:calc_if/src/about/subpages/about_developer_widget.dart';
-import 'package:calc_if/src/about/subpages/more_informations_widget.dart';
-import 'package:calc_if/src/app/settings_app.dart';
-import 'package:calc_if/src/widgets/background_widget.dart';
+import 'package:calc_if/src/about/ui/subpages/about_developer_subpage.dart';
+import 'package:calc_if/src/about/ui/subpages/more_informations_subpage.dart';
+import 'package:calc_if/src/app/loaded/settings_app.dart';
+import 'package:calc_if/src/app/widgets/background_widget.dart';
 
 class AboutDeveloperPage extends StatefulWidget {
   const AboutDeveloperPage({super.key});
@@ -16,8 +16,8 @@ class _AboutDeveloperPageState extends State<AboutDeveloperPage> {
   bool iconBack = false;
 
   final List<Widget> pages = const [
-    AboutDeveloperWidget(), 
-    MoreInformationsWidget()
+    AboutDeveloperSubPage(), 
+    MoreInformationsSubPage()
   ];
 
   @override

@@ -1,4 +1,4 @@
-import 'package:calc_if/src/home/home_page.dart';
+import 'package:calc_if/src/home/ui/home_page.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatelessWidget {
@@ -10,6 +10,12 @@ class App extends StatelessWidget {
       title: 'CalcIF',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        pageTransitionsTheme: PageTransitionsTheme(
+          builders: {
+            TargetPlatform.iOS : CupertinoPageTransitionsBuilder(),
+            TargetPlatform.android : CupertinoPageTransitionsBuilder()
+          }
+        ),
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.deepOrange
         ),

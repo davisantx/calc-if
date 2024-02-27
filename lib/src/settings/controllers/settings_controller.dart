@@ -1,27 +1,48 @@
 import 'package:calc_if/constants/keys.dart';
+import 'package:calc_if/src/about/about_developer_page.dart';
+import 'package:calc_if/src/app/loaded/settings_app.dart';
+import 'package:calc_if/src/themes/ui/themes_page.dart';
 import 'package:calc_if/storage/storage.dart';
 import 'package:flutter/material.dart';
 
-class SettingsController {
-  List<String> titulos = [];
-  List<IconData> icones = [];
-  List<dynamic> telas = [];
-  bool chave = false;
+mixin SettingsController {
+  List<String> titulos = [
+    'Temas',
+    'Precisão das casas decimais',
+    'Salvar registros',
+    'Fixar card automaticamente',
+    'Sobre o desenvolvedor'
+  ];
+  List<IconData> icones = [
+    Icons.color_lens,
+    Icons.percent_outlined,
+    Icons.save_outlined,
+    Icons.fire_extinguisher,
+    Icons.person
+  ];
+  List<dynamic> telas = [
+    const ThemesPage(),
+    null,
+    null,
+    null,
+    const AboutDeveloperPage()
+  ];
 
-  SettingsController({
-    required this.titulos,
-    required this.icones,
-    required this.telas,
-    required this.chave
-  });
+  List onChanged = [
+    null,
+    (value) {
+      SettingsApp.limitarCasasDecimais = value; 
+      Storage.save(Keys.keyLimit, SettingsApp.limitarCasasDecimais);
+    },
+    (value) {
+      SettingsApp.registrarRegistros = value; 
+      Storage.save(Keys.keyRegisterRecords, SettingsApp.registrarRegistros);
+    },
+    (value) {
+      SettingsApp.fixarBox = value; 
+      Storage.save(Keys.keyBoxFixed, SettingsApp.fixarBox);
+    },
+    null
+  ];
 
-  void saveValue(bool chave, String key) async {
-    switch (key) {
-      case Keys.keyLimit : 
-        Storage.save(Keys.keyLimit, chave);
-      case Keys.keyRegisterRecords :
-        Storage.save(Keys.keyRegisterRecords, chave);
-    }
-    
-  }
 }
