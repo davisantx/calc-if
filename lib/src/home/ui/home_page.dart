@@ -70,8 +70,10 @@ class HomePage extends StatelessWidget with HomeController {
                     controller: controller,
                     physics: BouncingScrollPhysics(),
                     itemCount: boxes.length,
+                    onPageChanged: onPageChanged,
+  
                     itemBuilder: (context, index) {
-                      onPageChanged();
+                      
                       return boxes[index];
                     }
                   ),

@@ -39,8 +39,14 @@ mixin SettingsController {
       Storage.save(Keys.keyRegisterRecords, SettingsApp.registrarRegistros);
     },
     (value) {
-      SettingsApp.fixarBox = value; 
-      Storage.save(Keys.keyBoxFixed, SettingsApp.fixarBox);
+      SettingsApp.fixarBox = value;
+      if(SettingsApp.fixarBox) {
+        Storage.save(Keys.keyBoxFixed, SettingsApp.fixarBox);
+      }else {
+        SettingsApp.boxFixado = 0;
+        Storage.save(Keys.keyBoxFixed, SettingsApp.fixarBox);
+        Storage.save(Keys.boxFixed, SettingsApp.boxFixado);
+      }
     },
     null
   ];

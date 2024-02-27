@@ -14,15 +14,17 @@ mixin HomeController {
 
   final PageController controller = PageController(
     viewportFraction: 0.83,
-    initialPage: SettingsApp.fixarBox ? SettingsApp.boxFixado : 0,
+    initialPage: SettingsApp.fixarBox ? SettingsApp.boxFixado : 0
   );
 
-  void onPageChanged() {
+  void onPageChanged(int value) async {
     if(SettingsApp.fixarBox) {
-      SettingsApp.boxFixado = controller.page!.round();
+      await controller.positions.isEmpty == false;
+      SettingsApp.boxFixado = value;
       Storage.save(Keys.boxFixed, SettingsApp.boxFixado);
     }else {
-      return;
+      SettingsApp.boxFixado = 0;
+      Storage.save(Keys.boxFixed, SettingsApp.boxFixado);
     }
   }
   
